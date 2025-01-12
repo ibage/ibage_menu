@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İbagé Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'); /* Font similar to the image */
+        body {
+            font-family: 'Playfair Display', serif; /* Serif font similar to İbagé */
+            margin: 0;
+            padding: 0;
+            background-color: #014421; /* Resimdeki yeşil tona uygun renk */
+            text-align: center;
+        }
+        #header {
+            font-size: 2.5em;
+            font-weight: bold;
+            padding: 20px;
+            margin: 0;
+            color: #e1c699; /* Resimdeki yazı rengine uygun açık bej tonu */
+        }
+        #menu-cover {
+            width: 90%;
+            max-width: 600px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .menu-images {
+            display: none;
+            margin-top: 20px;
+        }
+        .menu-images img {
+            width: 90%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function showMenu() {
+            document.getElementById('menu-cover').style.display = 'none';
+            document.getElementById('menu-images').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div id="header">welcome to ibagé</div>
+    <img id="menu-cover" src="./static/IMG-20250111-WA0007.jpg" alt="Menu Cover" onclick="showMenu()">
+    <div id="menu-images" class="menu-images">
+        <img src="./static/IMG-20250111-WA0008.jpg" alt="Hot Coffees">
+        <img src="./static/IMG-20250111-WA0009.jpg" alt="Cold Coffees">
+        <img src="./static/IMG-20250111-WA0006.jpg" alt="Tea & Specialist">
+        <img src="./static/IMG-20250111-WA0010.jpg" alt="Dessert & Bakery">
+        <img src="./static/IMG-20250111-WA0011.jpg" alt="Thank You">
+    </div>
+</body>
+</html>
